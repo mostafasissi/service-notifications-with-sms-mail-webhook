@@ -42,5 +42,6 @@ tests, nous avons opté pour l'intégration avec Slack.
 # Exigences
 Pour construire et exécuter l'application, vous avez besoin de :
 
-JDK 1.8
-Maven 3
+- JDK 1.8
+- Maven 3
+- docker && docker compose
