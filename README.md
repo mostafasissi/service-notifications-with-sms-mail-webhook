@@ -39,3 +39,8 @@ le monde entier, en bénéficiant d'une couverture étendue et d'une livraison r
   - Webhook service ( tester avec slack) 
 Ce service est conçu pour envoyer des webhooks vers différentes destinations, et pour nos 
 tests, nous avons opté pour l'intégration avec Slack.
+# Exigences
+Pour construire et exécuter l'application, vous avez besoin de :
+
+JDK 1.8
+Maven 3
