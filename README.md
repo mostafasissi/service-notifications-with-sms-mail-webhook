@@ -16,4 +16,26 @@ risques, et garantir le bon fonctionnement des équipements surveillés.
 
 ![image](https://github.com/mostafasissi/service-notifications-with-sms-mail-webhook/assets/101025147/6b964757-1751-475a-9e69-d972d981a7c3)
 
+# L'implementation 
+  - Kafka producer  
+Ce service efficace, basé sur Spring Boot, facilite l'envoi de messages vers Kafka.
 
+  - Ecosystème de kafka  
+L'implémentation de l'écosystème Kafka est réalisée à l'aide de Docker Compose, en 
+exécutant deux conteneurs : l'un contenant un broker Kafka et l'autre contenant ZooKeeper.
+  - kafka consumer  
+Ce service est développé avec Spring Boot et a pour fonctionnalité de lire des messages à 
+partir de divers topics Kafka (mail topic, sms topic, webhook topic) pour ensuite invoquer les 
+services d'envoi de messages appropriés.
+  - mail service  
+Ce service est développé en utilisant Spring Boot avec le module Spring Mail, qui permet de 
+gérer l'envoi d'e-mails de manière fiable et sécurisée.
+  - SMS service :  
+Ce service est réalisé en utilisant l'API de Vonage, une plateforme de communication 
+puissante qui facilite l'envoi de SMS vers des destinations partout dans le monde. 
+L'intégration de l'API de Vonage nous permet d'offrir une expérience de messagerie SMS 
+fiable et efficace. Grâce à cette API, nous pouvons envoyer des SMS à des destinataires dans 
+le monde entier, en bénéficiant d'une couverture étendue et d'une livraison rapide.
+  - Webhook service ( tester avec slack) 
+Ce service est conçu pour envoyer des webhooks vers différentes destinations, et pour nos 
+tests, nous avons opté pour l'intégration avec Slack.
