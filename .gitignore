@@ -1,0 +1,6 @@
+.idea
+kafka/kafka-customer/.idea
+kafka/kafka-producer/.idea
+service-email-spring-boot/.idea
+service-sms-vonage/.idea
+webhook-service/.idea
